@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Research archives are byte-addressed; checkout must not rewrite their bytes.
+examples/outputs/** -text
+examples/verification/*.ipynb -text
+docs/evidence/*.json -text
+*.xlsx binary

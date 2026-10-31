@@ -1,0 +1,17 @@
+.venv/
+.tmp/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.egg-info/
+build/
+dist/
+.surveybridge/
+.env
+*.log
+docs/dhs-index.html
+docs/evidence/*.cfm
+docs/evidence/*.js
+examples/outputs/offline-replay-verification/
+examples/verification/mcp-outputs/
+examples/outputs/four-country-immunization/

@@ -1,0 +1,56 @@
+{
+  "sdk_version": "2.3.0",
+  "server_name": "SurveyBridge AI",
+  "mode": "public API with response cache",
+  "tools": [
+    {
+      "tool": "surveybridge_healthcheck",
+      "status": "ok",
+      "source_pages": 0,
+      "warning_count": 0,
+      "truncated": false
+    },
+    {
+      "tool": "surveybridge_list_countries",
+      "status": "ok",
+      "source_pages": 1,
+      "warning_count": 0,
+      "truncated": false
+    },
+    {
+      "tool": "surveybridge_list_surveys",
+      "status": "ok",
+      "source_pages": 2,
+      "warning_count": 0,
+      "truncated": false
+    },
+    {
+      "tool": "surveybridge_search_indicators",
+      "status": "ok",
+      "source_pages": 5,
+      "warning_count": 0,
+      "truncated": false
+    },
+    {
+      "tool": "surveybridge_get_indicator_series",
+      "status": "ok",
+      "source_pages": 4,
+      "warning_count": 5,
+      "truncated": false
+    },
+    {
+      "tool": "surveybridge_assess_comparability",
+      "status": "ok",
+      "source_pages": 4,
+      "warning_count": 5,
+      "truncated": false
+    },
+    {
+      "tool": "surveybridge_export_project",
+      "status": "ok",
+      "source_pages": 4,
+      "warning_count": 5,
+      "truncated": false
+    }
+  ]
+}

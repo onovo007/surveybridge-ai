@@ -1,0 +1,18 @@
+include LICENSE README.md ARCHITECTURE.md PRD.md ACCEPTANCE_TESTS.md DATA_ACCESS_POLICY.md CODEX_MASTER_PROMPT.md AGENTS.md
+include plugin.json mcp.json .mcp.json
+recursive-include docs *.md
+recursive-include skills *.md
+recursive-include .agents/skills *.md
+recursive-include .claude/skills *.md
+recursive-include .claude-plugin *.json
+recursive-include .codex-plugin *.json
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include examples *.md *.py *.json *.csv *.ipynb *.xlsx *.txt
+recursive-include docs/evidence *.json
+recursive-include ci *.yml *.md
+include .gitattributes .gitignore
+include requirements-windows-py312.lock.txt
+prune examples/outputs/offline-replay-verification
+prune examples/verification/mcp-outputs
+prune examples/outputs/four-country-immunization

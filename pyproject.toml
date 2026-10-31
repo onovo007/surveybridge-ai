@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surveybridge-ai"
+version = "0.1.0"
+description = "Auditable public DHS indicator research through CLI and MCP"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Quantium Insights LLC"}]
+dependencies = ["httpx>=0.28,<0.29", "pydantic>=2.12,<3", "pandas>=2.2,<4", "openpyxl>=3.1,<4", "typer>=0.16,<1", "mcp>=2.3,<3", "nbformat>=5.10,<6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1", "build>=1.2,<2", "nbclient>=0.10,<1", "ipykernel>=6,<8", "pyyaml>=6,<7"]
+
+[project.scripts]
+surveybridge = "surveybridge.cli:app"
+surveybridge-mcp = "surveybridge.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]

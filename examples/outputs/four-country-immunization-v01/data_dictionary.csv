@@ -1,0 +1,33 @@
+﻿field,type,description
+raw,"dict[str, typing.Any]",Unmodified original API record.
+source_url,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+retrieved_utc,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+source_response_hash,<class 'str'>,SHA-256 of original response bytes under raw/.
+source_record_hash,<class 'str'>,SHA-256 of canonical JSON original record.
+source_row_id,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+source_country_id,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+source_country_name,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+source_survey_id,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+survey_year,int | None,DHS principal survey year; see survey_year_label and fieldwork dates.
+survey_year_label,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+survey_type,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+indicator_id,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+indicator_label,<class 'str'>,Normalized source metadata; see raw record and official DHS data/fields documentation.
+value,float | None,"Official estimate; null means missing, zero remains zero. No imputation."
+unit,str | None,Official indicator MeasurementType; NumberScale is preserved in indicator raw metadata.
+lower_ci,float | None,Source CILow only; null if absent; never estimated.
+upper_ci,float | None,Source CIHigh only; null if absent; never estimated.
+breakdown_type,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+breakdown_value,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+characteristic_id,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+by_variable_id,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+by_variable_label,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+region_id,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+is_total,bool | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+is_preferred,bool | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+definition,str | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+denominator,str | None,"Catalog population definition, not an estimate or sample count."
+denominator_weighted,float | None,Source weighted denominator; not independent observations.
+denominator_unweighted,float | None,"Source unweighted denominator, when supplied."
+precision,int | None,Normalized source metadata; see raw record and official DHS data/fields documentation.
+warnings,list[str],Normalized source metadata; see raw record and official DHS data/fields documentation.

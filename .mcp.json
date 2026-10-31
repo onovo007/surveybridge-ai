@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "surveybridge": {
+      "command": "surveybridge-mcp",
+      "args": []
+    }
+  }
+}
