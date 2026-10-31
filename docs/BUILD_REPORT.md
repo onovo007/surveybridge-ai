@@ -56,6 +56,16 @@ The catalog permits ages “12–23 [or 24–35] months.” Automated checks can
 
 The final bundle contains observations CSV/JSON, country/survey catalogs, indicator and field dictionaries, survey/indicator availability, overall and indicator-specific comparability reports, quality assessment, limitations, raw response snapshots, original project snapshot, SHA-256 manifest, source attribution, formatted Excel workbook and executable notebook. The executed verification notebook is kept outside the source bundle to retain stable checksums. Raw/normalized integrity checks reject tampered values, source URLs and records.
 
+## Public beta publication
+
+Published repository: [onovo007/surveybridge-ai](https://github.com/onovo007/surveybridge-ai). Published prerelease: [v0.1.0-beta.1](https://github.com/onovo007/surveybridge-ai/releases/tag/v0.1.0-beta.1), targeting commit `e852fe177c40336e9432de5b9edd71cb4902d19b`. The release contains the installable wheel and source distribution.
+
+An anonymous HTTP request downloaded the public wheel successfully (HTTP 200), with bytes identical to the locally verified asset. SHA-256: `3a785567c152973de57347da4bdcb9714f3e1dd3fb536e2ce5c6b9b75f75a35f`. The source distribution's GitHub digest is `cfd6ab0c498437bfc8b1e997ed95f86f99e04cedf17be2999b80e647a3880797`.
+
+The documented `pip install git+https://github.com/onovo007/surveybridge-ai.git@v0.1.0-beta.1` command succeeded in the isolated installation environment using normal build isolation. `pip check` reported no broken requirements, and the installed CLI returned version 0.1.0. The test suite from a clean public tagged clone passed **37 tests in 5.77s**, with its MCP server launched from that public-tag installation. All **24** research output checksums also verified after cloning, confirming that Git preserved archived response/export bytes.
+
+GitHub Actions returned no runs. The workflow is an inactive template due to the authorization limitation described below; cross-platform CI has not executed. This publication follow-up updates documentation on main without moving the immutable beta tag or replacing the verified release assets.
+
 ## Remaining release gates and next priorities
 
 1. Activate and inspect the nine-job CI matrix after granting GitHub workflow permission. The repository and beta distributions use the approved `onovo007/surveybridge-ai` destination; PyPI publication is not claimed.
