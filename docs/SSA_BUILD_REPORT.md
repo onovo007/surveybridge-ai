@@ -2,6 +2,14 @@
 
 Status: development extension prepared for draft PR review. No final release or merge is claimed. Original specifications, beta tag, original dependency snapshot and validated four-country outputs are preserved.
 
+**Pull request:** [onovo007/surveybridge-ai#1](https://github.com/onovo007/surveybridge-ai/pull/1), open and draft, `feat/ssa-coverage` → `main`. Remote inspection returned an empty status-check rollup and “no checks reported”; the repository has zero active GitHub Actions workflows.
+
+| Verification scope | Current evidence |
+|---|---|
+| Locally verified | 57 tests, fresh development-wheel MCP, CLI/dependency checks, notebook execution, source/output hashes, skills/plugins and Codex natural-language metadata session |
+| Remote verified | Public official source retrieval and metadata checks; normal feature-branch push; open draft PR #1 with main unchanged |
+| Unverified / blocked | Remote CI execution, Claude natural-language session while logged out, independent researcher acceptance and survey-specific scientific equivalence |
+
 ## Implemented scope
 
 - Versioned UN M49 reference and `SSACountryResolver`, joining current official ISO3 metadata and survey records; unmatched/ambiguous codes remain explicit.
