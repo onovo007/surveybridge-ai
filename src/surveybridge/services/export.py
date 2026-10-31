@@ -5,6 +5,7 @@ import json
 import os
 import shutil
 import tempfile
+import time
 from pathlib import Path
 
 import nbformat
@@ -118,7 +119,15 @@ def export_project(project, output_dir, formats, settings):
         try:
             if target.exists():
                 raise FileExistsError("Output already exists; choose a new directory")
-            os.rename(stage, target)
+            # Windows/OneDrive can briefly hold newly written directory entries.
+            for attempt in range(6):
+                try:
+                    os.rename(stage, target)
+                    break
+                except PermissionError:
+                    if attempt == 5 or target.exists():
+                        raise
+                    time.sleep(0.05 * (attempt + 1))
         finally:
             lock.unlink()
     finally:

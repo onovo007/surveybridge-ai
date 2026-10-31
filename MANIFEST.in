@@ -6,13 +6,16 @@ recursive-include .agents/skills *.md
 recursive-include .claude/skills *.md
 recursive-include .claude-plugin *.json
 recursive-include .codex-plugin *.json
-recursive-include scripts *.py
+recursive-include scripts *.py *.ps1
+recursive-include src/surveybridge/data *.json
+recursive-include tests/fixtures *.json *.html
 recursive-include tests *.py
 recursive-include examples *.md *.py *.json *.csv *.ipynb *.xlsx *.txt
 recursive-include docs/evidence *.json
 recursive-include ci *.yml *.md
 include .gitattributes .gitignore
 include requirements-windows-py312.lock.txt
+include requirements-ssa-windows-py312.lock.txt
 prune examples/outputs/offline-replay-verification
 prune examples/verification/mcp-outputs
 prune examples/outputs/four-country-immunization

@@ -13,6 +13,8 @@ authors = [{name = "Quantium Insights LLC"}]
 dependencies = ["httpx>=0.28,<0.29", "pydantic>=2.12,<3", "pandas>=2.2,<4", "openpyxl>=3.1,<4", "typer>=0.16,<1", "mcp>=2.3,<3", "nbformat>=5.10,<6"]
 
 [project.optional-dependencies]
+reports = ["pypdf>=5,<7"]
+analysis = ["matplotlib>=3.9,<4"]
 dev = ["pytest>=8,<10", "ruff>=0.14,<1", "build>=1.2,<2", "nbclient>=0.10,<1", "ipykernel>=6,<8", "pyyaml>=6,<7"]
 
 [project.scripts]
@@ -21,6 +23,9 @@ surveybridge-mcp = "surveybridge.mcp_server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+"surveybridge.data" = ["*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

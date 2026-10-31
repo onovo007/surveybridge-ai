@@ -12,7 +12,7 @@ from surveybridge.config import Settings
 from surveybridge.utils.cache import ResponseCache, canonical, digest
 
 log = logging.getLogger(__name__)
-ENDPOINTS = {"countries", "surveys", "indicators", "data"}
+ENDPOINTS = {"countries", "surveys", "indicators", "data", "publications"}
 
 
 class DHSError(RuntimeError):
@@ -108,12 +108,17 @@ class DHSClient:
         ):
             raise ValueError("DHS data requires country, indicator or survey filter")
         records, pages = [], []
+        seen_pages = set()
         total_records, total_pages = None, None
         for page in range(1, self.settings.max_pages + 1):
             item, hit = self._page(
                 endpoint, {**params, "f": "json", "perpage": self.settings.per_page, "page": page}
             )
             payload = json.loads(bytes.fromhex(item["body_hex"]))
+            signature = digest(canonical(payload.get("Data")))
+            if payload.get("Data") and signature in seen_pages:
+                raise DHSError("Repeated DHS page content; refusing duplicate pagination")
+            seen_pages.add(signature)
             try:
                 reported_page = int(payload["Page"])
                 reported_total = int(payload["TotalPages"])
