@@ -1,5 +1,7 @@
 # SurveyBridge AI v0.1 build report
 
+The ongoing SSA/publication extension is documented in [SSA_BUILD_REPORT.md](SSA_BUILD_REPORT.md), with [source verification](SSA_API_VERIFICATION.md) and [workflow guidance](SSA_PUBLICATIONS_GUIDE.md). The historical beta report below is preserved; its counts and verification scope refer to that release.
+
 Date: **31 October 2026 (America/New_York)**. Status: **tested beta**. The package, CLI, seven-tool MCP server, skills, research exports and real four-country demonstration are implemented. GitHub publication was authorized to `onovo007/surveybridge-ai`. Remote CI, external installations and researcher beta validation remain separate release gates.
 
 ## Components created

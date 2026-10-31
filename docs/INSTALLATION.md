@@ -4,6 +4,8 @@ Requires Python 3.11 or later, internet for initial dependency installation/live
 
 ## Public beta
 
+For the SSA/publication development branch, follow [the extension guide](SSA_PUBLICATIONS_GUIDE.md) and install `.[reports,analysis,dev]` from that branch. Publication and regional-run tools are additive; the beta installation commands below remain valid for v0.1.0-beta.1.
+
 Clone [onovo007/surveybridge-ai](https://github.com/onovo007/surveybridge-ai) for the complete skills, demonstration and documentation. The runtime can be installed directly from the beta tag:
 
 ```sh

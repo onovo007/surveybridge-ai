@@ -2,7 +2,9 @@
 
 **Quantium Insights LLC · public DHS aggregate research for Python, Codex and Claude Code**
 
-Discover official country, survey and indicator metadata; retrieve public aggregated DHS estimates; flag comparison risks; export auditable CSV, JSON, Excel and executable notebooks. The local MCP server exposes seven research tools through the current official Python MCP SDK. No AI API key is required by this package.
+The `feat/ssa-coverage` development branch adds UN M49 SSA coverage, publication-first discovery (including reports absent from the aggregate API), optional PDF metadata verification, and checkpointed regional exports. See the [SSA/publication guide](docs/SSA_PUBLICATIONS_GUIDE.md). The original beta tag and four-country outputs remain unchanged; this extension is not a final release.
+
+Discover official country, survey and indicator metadata; retrieve public aggregated DHS estimates; flag comparison risks; export auditable CSV, JSON, Excel and executable notebooks. The released beta exposes seven MCP tools; the SSA/publication development extension exposes eleven through the official Python MCP SDK. No AI API key is required by this package.
 
 Status: **tested beta**, distributed through [GitHub](https://github.com/onovo007/surveybridge-ai). See [the build report](docs/BUILD_REPORT.md) for executed checks and remaining release gates. A 14-day sprint is a development target; external beta testing and cross-platform validation are not assumed complete.
 
@@ -60,6 +62,10 @@ Exports are restricted to a new directory under `SURVEYBRIDGE_OUTPUT_ROOT` (defa
 | `surveybridge_get_indicator_series` | Source-traceable observations and persistent project ID |
 | `surveybridge_assess_comparability` | Metadata-based block/caution checks |
 | `surveybridge_export_project` | Documented local CSV/JSON/XLSX/notebook bundle |
+| `surveybridge_list_publications` | SSA/country official report catalogs, latest known dates and source gaps (development extension) |
+| `surveybridge_get_report_metadata` | Official metadata/link verification and optional bounded PDF front-matter check |
+| `surveybridge_run_regional_project` | Explicit-indicator country batches with persistent checkpoint/resume |
+| `surveybridge_export_regional_project` | Separate SSA coverage, publication, lineage and reproducibility bundle |
 
 Every successful application response follows `{status,data,warnings,source,truncated,pagination}`. SDK input-schema errors follow MCP's protocol error contract. The series response contains at most 500 rows; the project and export contain all retrieved rows. Queries exceeding the bounded page budget fail instead of silently saving partial data.
 
