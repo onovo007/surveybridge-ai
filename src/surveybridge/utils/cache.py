@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 import tempfile
+import time
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -24,7 +25,14 @@ def atomic_json(path: Path, value) -> None:
     try:
         with os.fdopen(fd, "wb") as stream:
             stream.write(canonical(value))
-        os.replace(temp, path)
+        for attempt in range(6):
+            try:
+                os.replace(temp, path)
+                break
+            except PermissionError:
+                if attempt == 5:
+                    raise
+                time.sleep(0.05 * (attempt + 1))
     finally:
         if os.path.exists(temp):
             os.unlink(temp)

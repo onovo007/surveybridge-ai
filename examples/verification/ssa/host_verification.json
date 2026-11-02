@@ -1,0 +1,38 @@
+{
+  "codex": {
+    "status": "passed",
+    "mode": "ephemeral read-only natural-language host session",
+    "calls": [
+      {
+        "server": "surveybridge",
+        "tool": "surveybridge_healthcheck",
+        "status": "completed"
+      },
+      {
+        "server": "surveybridge",
+        "tool": "surveybridge_list_countries",
+        "status": "completed"
+      },
+      {
+        "server": "surveybridge",
+        "tool": "surveybridge_get_report_metadata",
+        "status": "completed"
+      },
+      {
+        "server": "surveybridge",
+        "tool": "surveybridge_list_countries",
+        "status": "completed"
+      }
+    ],
+    "approval_scope": "invocation-only allowlist of three public read tools; no persistent settings changed"
+  },
+  "claude": {
+    "status": "blocked",
+    "evidence": "claude auth status: loggedIn=false, authMethod=none",
+    "claim": "No natural-language success claimed"
+  },
+  "github_ci": {
+    "status": "blocked",
+    "evidence": "Publishing OAuth token lacks workflow scope; ci/validation.yml remains inactive template"
+  }
+}

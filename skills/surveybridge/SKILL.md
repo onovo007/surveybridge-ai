@@ -1,11 +1,23 @@
 ---
 name: surveybridge
-description: Discover public DHS surveys and indicators, retrieve aggregated health estimates across countries and survey rounds, assess comparability, and export source-traceable research bundles through SurveyBridge MCP. Use for DHS aggregate research; restricted microdata and causal estimation are outside scope.
+description: Discover public DHS surveys, latest official reports including mini-DHS and preliminary releases, retrieve aggregate indicators across countries or Sub-Saharan Africa, assess comparability and export auditable research. Restricted microdata and causal estimation are outside scope.
 ---
 
 # SurveyBridge AI
 
 Use the installed `surveybridge` local MCP server. If tools are unavailable, follow the repository's `docs/INSTALLATION.md` to install the Python package and register its stdio server. A skill alone does not install Python dependencies.
+
+For Sub-Saharan Africa use `region="ssa"` on country/survey discovery. The resolver intersects a versioned UN M49 SSA reference with current DHS ISO3 metadata and survey records; report discovered counts, unmatched codes and source dates, not a fixed country total. Explicit `country_ids` override region selection. Do not assume all African countries are SSA or every survey has a selected indicator.
+
+Before requesting numerical series, use `surveybridge_list_publications` to discover the official API catalog plus public country publication catalogs. Include preliminary/Key Indicators, final and officially named mini-DHS reports whose observations are not in the API. Use `surveybridge_get_report_metadata` for exact official links, optional bounded PDF front-matter verification and canonical survey-number joins. Report metadata discovery does not extract estimates. Preserve catalog publication date, PDF cover date, survey year and fieldwork dates separately, including disagreements. An absent API catalog entry does not prove that a report or survey does not exist.
+
+Keep explanations within the retrieved evidence. Do not infer seasonality from fieldwork months, infer an API date's methodological precision from first-of-month values, or declare that mini/interim naming proves a survey-design conflict. Preserve literal dates and distinct source labels; resolve methodological meaning only against explicit report methods. A field formatted as a full date does not establish that its day is the actual fieldwork day. Clearly label any supported inference and its evidence; omit unsupported interpretations.
+
+For multi-country or multi-indicator SSA work, call `surveybridge_run_regional_project` with explicit verified `indicator_ids`. No IDs means metadata-only. The service discovers survey/report coverage first, then executes bounded serial country/indicator tasks with persistent checkpoints. A partial result returns a `run_id`; resume that ID until failed/pending tasks are resolved or documented. Never interpret failed or pending tasks as missing indicator data. Use `refresh_publications=true` to retry incomplete web discovery; resource caps are operator-controlled. Export with `surveybridge_export_regional_project` to a new directory. Regional bundles include publication/availability catalogs, latest known releases, source history, lineage and a local reproducible notebook.
+
+Distinguish API_INDICATOR_AVAILABLE, OFFICIAL_REPORT_AVAILABLE_API_PENDING, REPORT_METADATA_ONLY and confirmed DATASET_RESTRICTED_OR_UNAVAILABLE; unknown dataset access is not a confirmed restriction. API availability may be survey-wide catalog metadata or checked only for explicitly requested indicators: state the scope. SOURCE_UNVERIFIED, ambiguous survey matches and partial catalogs remain visible. “Latest known” means latest dated record among checked sources, not guaranteed complete surveillance of all publishers.
+
+Keep preliminary, final, revised and API sources linked by survey and report identifiers. Do not count successive versions as independent observations. If reconciliation is unsupported, label needs_reconciliation rather than inventing supersession or revised estimates. Numerical PDF-table extraction is disabled in this extension; direct researchers to the official page/table and retain scientific uncertainty. Nigeria PR166 is a mandatory case: verify its current official sources rather than assuming its title, date or design from the URL.
 
 Resolve countries with `surveybridge_list_countries`; DHS country codes are not always ISO codes. List survey rounds with `surveybridge_list_surveys`. Search the catalog with `surveybridge_search_indicators` before choosing exact indicator IDs. Read the candidate definitions, units, denominators and indicator families; similarly named vaccination measures may describe different populations or ascertainment windows. Clarify a scientifically material ambiguity with the researcher.
 

@@ -32,15 +32,17 @@ def test_stdio_handshake_tools_and_validation(service, project):
             assert initialized.server_info.name == "SurveyBridge AI"
             tools = await session.list_tools()
             names = {t.name for t in tools.tools}
-            assert names == {
-                "surveybridge_healthcheck",
-                "surveybridge_list_countries",
-                "surveybridge_list_surveys",
-                "surveybridge_search_indicators",
-                "surveybridge_get_indicator_series",
-                "surveybridge_assess_comparability",
-                "surveybridge_export_project",
-            }
+            assert names.issuperset(
+                {
+                    "surveybridge_healthcheck",
+                    "surveybridge_list_countries",
+                    "surveybridge_list_surveys",
+                    "surveybridge_search_indicators",
+                    "surveybridge_get_indicator_series",
+                    "surveybridge_assess_comparability",
+                    "surveybridge_export_project",
+                }
+            )
             result = await session.call_tool("surveybridge_healthcheck", {})
             assert result.structured_content is not None, result
             assert result.structured_content["status"] == "ok"

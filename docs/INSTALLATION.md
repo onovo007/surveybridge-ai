@@ -4,6 +4,8 @@ Requires Python 3.11 or later, internet for initial dependency installation/live
 
 ## Public beta
 
+For the SSA/publication development branch, follow [the extension guide](SSA_PUBLICATIONS_GUIDE.md) and install `.[reports,analysis,dev]` from that branch. Publication and regional-run tools are additive; the beta installation commands below remain valid for v0.1.0-beta.1.
+
 Clone [onovo007/surveybridge-ai](https://github.com/onovo007/surveybridge-ai) for the complete skills, demonstration and documentation. The runtime can be installed directly from the beta tag:
 
 ```sh
@@ -94,7 +96,7 @@ claude --plugin-dir /absolute/surveybridge
 
 Use the repository skill path for direct skill discovery, or the plugin's root `skills/` for plugin loading; avoid duplicate installation in the same host. Plugin users invoke its namespaced skill as shown by the host. The portable OpenAI manifest follows the current official packaging format; marketplace publication is separate. Direct repo skill plus MCP registration is the simplest local setup. Host manifests do not substitute for Python package installation.
 
-Try: “Use SurveyBridge to discover DPT 3 vaccination indicators for Nigeria, Kenya, Uganda and Tanzania. Explain candidate definitions, retrieve national estimates for all available rounds, assess each indicator, and export a documented research bundle.” Confirm that the host sees seven tools and that the reported warnings match the exported assessment.
+Try: “Use SurveyBridge to discover DPT 3 vaccination indicators for Nigeria, Kenya, Uganda and Tanzania. Explain candidate definitions, retrieve national estimates for all available rounds, assess each indicator, and export a documented research bundle.” Confirm that the host sees seven tools for the original beta or eleven for the SSA extension, and that reported warnings match the exported assessment.
 
 ## Demo and offline reproduction
 

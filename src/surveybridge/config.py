@@ -20,6 +20,16 @@ class Settings(BaseModel):
     per_page: int = Field(default=1000, ge=1, le=1000)
     cache_seconds: int = Field(default=86400, ge=0)
     offline: bool = Field(default_factory=lambda: os.getenv("SURVEYBRIDGE_OFFLINE", "0") == "1")
+    max_web_requests: int = Field(
+        default_factory=lambda: int(os.getenv("SURVEYBRIDGE_MAX_WEB_REQUESTS", "500")),
+        ge=1,
+        le=2000,
+    )
+    max_catalog_bytes: int = Field(default=5_000_000, ge=1000, le=20_000_000)
+    max_report_bytes: int = Field(default=20_000_000, ge=1000, le=100_000_000)
+    max_batch_tasks: int = Field(
+        default_factory=lambda: int(os.getenv("SURVEYBRIDGE_MAX_BATCH_TASKS", "200")), ge=1, le=5000
+    )
 
     @field_validator("base_url")
     @classmethod

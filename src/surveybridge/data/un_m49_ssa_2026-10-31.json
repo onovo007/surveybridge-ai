@@ -1,0 +1,380 @@
+{
+  "version": "UN-M49-2026-10-31",
+  "source_url": "https://unstats.un.org/unsd/methodology/m49/overview/",
+  "retrieved_utc": "2026-10-31T06:20:52.483537+00:00",
+  "source_html_sha256": "b9048114f6e7f2abda83bf03d4263c9d7cd1bd7230e3d0461025ee7839a7a1fb",
+  "selection": "Sub-region Code = 202",
+  "countries": [
+    {
+      "iso3": "IOT",
+      "iso2": "IO",
+      "m49": "086",
+      "un_name": "British Indian Ocean Territory",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "BDI",
+      "iso2": "BI",
+      "m49": "108",
+      "un_name": "Burundi",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "COM",
+      "iso2": "KM",
+      "m49": "174",
+      "un_name": "Comoros",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "DJI",
+      "iso2": "DJ",
+      "m49": "262",
+      "un_name": "Djibouti",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "ERI",
+      "iso2": "ER",
+      "m49": "232",
+      "un_name": "Eritrea",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "ETH",
+      "iso2": "ET",
+      "m49": "231",
+      "un_name": "Ethiopia",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "ATF",
+      "iso2": "TF",
+      "m49": "260",
+      "un_name": "French Southern Territories",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "KEN",
+      "iso2": "KE",
+      "m49": "404",
+      "un_name": "Kenya",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "MDG",
+      "iso2": "MG",
+      "m49": "450",
+      "un_name": "Madagascar",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "MWI",
+      "iso2": "MW",
+      "m49": "454",
+      "un_name": "Malawi",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "MUS",
+      "iso2": "MU",
+      "m49": "480",
+      "un_name": "Mauritius",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "MYT",
+      "iso2": "YT",
+      "m49": "175",
+      "un_name": "Mayotte",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "MOZ",
+      "iso2": "MZ",
+      "m49": "508",
+      "un_name": "Mozambique",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "REU",
+      "iso2": "RE",
+      "m49": "638",
+      "un_name": "Réunion",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "RWA",
+      "iso2": "RW",
+      "m49": "646",
+      "un_name": "Rwanda",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "SYC",
+      "iso2": "SC",
+      "m49": "690",
+      "un_name": "Seychelles",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "SOM",
+      "iso2": "SO",
+      "m49": "706",
+      "un_name": "Somalia",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "SSD",
+      "iso2": "SS",
+      "m49": "728",
+      "un_name": "South Sudan",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "UGA",
+      "iso2": "UG",
+      "m49": "800",
+      "un_name": "Uganda",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "TZA",
+      "iso2": "TZ",
+      "m49": "834",
+      "un_name": "United Republic of Tanzania",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "ZMB",
+      "iso2": "ZM",
+      "m49": "894",
+      "un_name": "Zambia",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "ZWE",
+      "iso2": "ZW",
+      "m49": "716",
+      "un_name": "Zimbabwe",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "iso3": "AGO",
+      "iso2": "AO",
+      "m49": "024",
+      "un_name": "Angola",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "CMR",
+      "iso2": "CM",
+      "m49": "120",
+      "un_name": "Cameroon",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "CAF",
+      "iso2": "CF",
+      "m49": "140",
+      "un_name": "Central African Republic",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "TCD",
+      "iso2": "TD",
+      "m49": "148",
+      "un_name": "Chad",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "COG",
+      "iso2": "CG",
+      "m49": "178",
+      "un_name": "Congo",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "COD",
+      "iso2": "CD",
+      "m49": "180",
+      "un_name": "Democratic Republic of the Congo",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "GNQ",
+      "iso2": "GQ",
+      "m49": "226",
+      "un_name": "Equatorial Guinea",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "GAB",
+      "iso2": "GA",
+      "m49": "266",
+      "un_name": "Gabon",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "STP",
+      "iso2": "ST",
+      "m49": "678",
+      "un_name": "Sao Tome and Principe",
+      "subregion": "Middle Africa"
+    },
+    {
+      "iso3": "BWA",
+      "iso2": "BW",
+      "m49": "072",
+      "un_name": "Botswana",
+      "subregion": "Southern Africa"
+    },
+    {
+      "iso3": "SWZ",
+      "iso2": "SZ",
+      "m49": "748",
+      "un_name": "Eswatini",
+      "subregion": "Southern Africa"
+    },
+    {
+      "iso3": "LSO",
+      "iso2": "LS",
+      "m49": "426",
+      "un_name": "Lesotho",
+      "subregion": "Southern Africa"
+    },
+    {
+      "iso3": "NAM",
+      "iso2": "NA",
+      "m49": "516",
+      "un_name": "Namibia",
+      "subregion": "Southern Africa"
+    },
+    {
+      "iso3": "ZAF",
+      "iso2": "ZA",
+      "m49": "710",
+      "un_name": "South Africa",
+      "subregion": "Southern Africa"
+    },
+    {
+      "iso3": "BEN",
+      "iso2": "BJ",
+      "m49": "204",
+      "un_name": "Benin",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "BFA",
+      "iso2": "BF",
+      "m49": "854",
+      "un_name": "Burkina Faso",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "CPV",
+      "iso2": "CV",
+      "m49": "132",
+      "un_name": "Cabo Verde",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "CIV",
+      "iso2": "CI",
+      "m49": "384",
+      "un_name": "Côte d’Ivoire",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "GMB",
+      "iso2": "GM",
+      "m49": "270",
+      "un_name": "Gambia",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "GHA",
+      "iso2": "GH",
+      "m49": "288",
+      "un_name": "Ghana",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "GIN",
+      "iso2": "GN",
+      "m49": "324",
+      "un_name": "Guinea",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "GNB",
+      "iso2": "GW",
+      "m49": "624",
+      "un_name": "Guinea-Bissau",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "LBR",
+      "iso2": "LR",
+      "m49": "430",
+      "un_name": "Liberia",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "MLI",
+      "iso2": "ML",
+      "m49": "466",
+      "un_name": "Mali",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "MRT",
+      "iso2": "MR",
+      "m49": "478",
+      "un_name": "Mauritania",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "NER",
+      "iso2": "NE",
+      "m49": "562",
+      "un_name": "Niger",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "NGA",
+      "iso2": "NG",
+      "m49": "566",
+      "un_name": "Nigeria",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "SHN",
+      "iso2": "SH",
+      "m49": "654",
+      "un_name": "Saint Helena",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "SEN",
+      "iso2": "SN",
+      "m49": "686",
+      "un_name": "Senegal",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "SLE",
+      "iso2": "SL",
+      "m49": "694",
+      "un_name": "Sierra Leone",
+      "subregion": "Western Africa"
+    },
+    {
+      "iso3": "TGO",
+      "iso2": "TG",
+      "m49": "768",
+      "un_name": "Togo",
+      "subregion": "Western Africa"
+    }
+  ]
+}

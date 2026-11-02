@@ -2,7 +2,11 @@
 
 **Quantium Insights LLC · public DHS aggregate research for Python, Codex and Claude Code**
 
-Discover official country, survey and indicator metadata; retrieve public aggregated DHS estimates; flag comparison risks; export auditable CSV, JSON, Excel and executable notebooks. The local MCP server exposes seven research tools through the current official Python MCP SDK. No AI API key is required by this package.
+The `feat/ssa-coverage` development branch adds UN M49 SSA coverage, publication-first discovery (including reports absent from the aggregate API), optional PDF metadata verification, and checkpointed regional exports. See the [SSA/publication guide](docs/SSA_PUBLICATIONS_GUIDE.md). The original beta tag and four-country outputs remain unchanged; this extension is not a final release.
+
+Read the [concept note with verified CI results](docs/SurveyBridge_AI_Concept_Note_CI_Verified_2026-11-02.docx) for goals, architecture, use cases and the proposed adoption plan, and the [scientific release review](docs/SCIENTIFIC_RELEASE_REVIEW.md) for the verified scope and comparison restrictions. The earlier concept note is preserved alongside this revision.
+
+Discover official country, survey and indicator metadata; retrieve public aggregated DHS estimates; flag comparison risks; export auditable CSV, JSON, Excel and executable notebooks. The released beta exposes seven MCP tools; the SSA/publication development extension exposes eleven through the official Python MCP SDK. No AI API key is required by this package.
 
 Status: **tested beta**, distributed through [GitHub](https://github.com/onovo007/surveybridge-ai). See [the build report](docs/BUILD_REPORT.md) for executed checks and remaining release gates. A 14-day sprint is a development target; external beta testing and cross-platform validation are not assumed complete.
 
@@ -60,6 +64,10 @@ Exports are restricted to a new directory under `SURVEYBRIDGE_OUTPUT_ROOT` (defa
 | `surveybridge_get_indicator_series` | Source-traceable observations and persistent project ID |
 | `surveybridge_assess_comparability` | Metadata-based block/caution checks |
 | `surveybridge_export_project` | Documented local CSV/JSON/XLSX/notebook bundle |
+| `surveybridge_list_publications` | SSA/country official report catalogs, latest known dates and source gaps (development extension) |
+| `surveybridge_get_report_metadata` | Official metadata/link verification and optional bounded PDF front-matter check |
+| `surveybridge_run_regional_project` | Explicit-indicator country batches with persistent checkpoint/resume |
+| `surveybridge_export_regional_project` | Separate SSA coverage, publication, lineage and reproducibility bundle |
 
 Every successful application response follows `{status,data,warnings,source,truncated,pagination}`. SDK input-schema errors follow MCP's protocol error contract. The series response contains at most 500 rows; the project and export contain all retrieved rows. Queries exceeding the bounded page budget fail instead of silently saving partial data.
 
@@ -79,7 +87,7 @@ python scripts/sync_skills.py --check
 python -m build
 ```
 
-Tests run without DHS connectivity. HTTP mocks test failures and paging; actual archived DHS responses support regression tests; an SDK client starts the real stdio server and exercises all seven tools offline. The supplied [CI template](ci/README.md) targets Windows/macOS/Linux and Python 3.11–3.13. GitHub rejected workflow publication because the OAuth token lacks workflow permission; activation and remote validation remain outstanding.
+Tests run without DHS connectivity. HTTP mocks test failures and paging; archived DHS responses support regression tests; an SDK client starts the real stdio server and exercises the original seven and four additional tools offline. The [active CI workflow](ci/README.md) passed all nine Windows/macOS/Linux and Python 3.11–3.13 combinations on 2 November 2026, with 59 tests per job, integrity audits and distribution builds. See the [successful PR run](https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815). Native Codex and Claude natural-language metadata workflows are verified; independent researcher acceptance remains a separate final release requirement.
 
 See [API verification](docs/API_VERIFICATION.md), [engineering decisions](docs/DECISIONS.md), [data-access policy](DATA_ACCESS_POLICY.md), [acceptance tests](ACCEPTANCE_TESTS.md), [release notes](docs/RELEASE_NOTES.md), and [v0.2 roadmap](docs/ROADMAP.md).
 

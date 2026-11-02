@@ -1,0 +1,112 @@
+{
+  "status": "ok",
+  "data": {
+    "report_id": "PR166",
+    "source_url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+    "catalog_url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm",
+    "source_history": [
+      {
+        "kind": "official_report_search",
+        "url": "https://dhsprogram.com/publications/Publication-Search.cfm?pubid1=PR166&shareurl=yes",
+        "sha256": "efec5800efb8707cc651f8f9971de6c742129747420da4b6b12d49c33a1098da",
+        "retrieved_utc": "2026-11-02T07:08:00.714438+00:00"
+      },
+      {
+        "kind": "official_publication_detail",
+        "url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm",
+        "sha256": "7ccb15bf7fe2d1451a6393dce29ca2486f3c26938abe0f64b7aefc6c5b536d04",
+        "retrieved_utc": "2026-11-02T07:08:01.277118+00:00",
+        "metadata": {
+          "Document Type": "Preliminary Reports/Key Indicators Reports",
+          "Country(s)": "Nigeria",
+          "Survey": "Nigeria Interim DHS, 2025",
+          "Language": "English",
+          "Author(s)": "National Population Commission, Abuja, Nigeria, and ICF, Rockville, Maryland, USA",
+          "Publication Date": "July 2026",
+          "Publication ID": "PR166"
+        }
+      },
+      {
+        "kind": "official_pdf",
+        "url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+        "resolved_url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+        "sha256": "6917a48ddb5ff5054818e8089d7a5b77e0d2e41f0869fe81e0c7a2ae6e1bee87",
+        "retrieved_utc": "2026-11-02T07:08:01.452591+00:00",
+        "prefix_only": false
+      }
+    ],
+    "warnings": [
+      "Official report exists while API survey status is not Completed",
+      "PDF cover date 2026-06 differs from catalog publication date 2026-07; both preserved"
+    ],
+    "country_id": "NG",
+    "title": "Nigeria Mini DHS 2025-26 - Key Indicators Report (English)",
+    "publication_date": "2026-07",
+    "publication_date_precision": "month",
+    "publication_date_raw": "07/2026",
+    "report_type": "Preliminary Reports/Key Indicators Reports",
+    "survey_id": "NG2025DHS",
+    "survey_year": 2025,
+    "survey_type": "DHS",
+    "fieldwork_start": "2025-12-01",
+    "fieldwork_end": "2026-02-01",
+    "match_status": "official_survey_number_join",
+    "pdf_verification": {
+      "page_count": 40,
+      "cover_date": "2026-06",
+      "cover_date_precision": "month",
+      "official_mini_design_label": true,
+      "fieldwork_sentence": {
+        "start": "2025-12-08",
+        "end": "2026-02-15",
+        "method": "literal_fieldwork_sentence_front_matter"
+      },
+      "verification_method": "pypdf_front_matter_structure",
+      "numeric_estimates_extracted": false,
+      "tables": "Complex tables require independent page/table/denominator validation; extraction disabled"
+    },
+    "download_verified": true,
+    "verification_status": "OFFICIAL_PDF_VERIFIED_NO_ESTIMATES_EXTRACTED",
+    "source_states": [
+      "OFFICIAL_REPORT_AVAILABLE_API_PENDING"
+    ],
+    "api_availability_scope": "survey_catalog_any_indicator_not_requested_indicator"
+  },
+  "warnings": [
+    "Official report exists while API survey status is not Completed",
+    "PDF cover date 2026-06 differs from catalog publication date 2026-07; both preserved"
+  ],
+  "source": [
+    {
+      "kind": "official_report_search",
+      "url": "https://dhsprogram.com/publications/Publication-Search.cfm?pubid1=PR166&shareurl=yes",
+      "sha256": "efec5800efb8707cc651f8f9971de6c742129747420da4b6b12d49c33a1098da",
+      "retrieved_utc": "2026-11-02T07:08:00.714438+00:00"
+    },
+    {
+      "kind": "official_publication_detail",
+      "url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm",
+      "sha256": "7ccb15bf7fe2d1451a6393dce29ca2486f3c26938abe0f64b7aefc6c5b536d04",
+      "retrieved_utc": "2026-11-02T07:08:01.277118+00:00",
+      "metadata": {
+        "Document Type": "Preliminary Reports/Key Indicators Reports",
+        "Country(s)": "Nigeria",
+        "Survey": "Nigeria Interim DHS, 2025",
+        "Language": "English",
+        "Author(s)": "National Population Commission, Abuja, Nigeria, and ICF, Rockville, Maryland, USA",
+        "Publication Date": "July 2026",
+        "Publication ID": "PR166"
+      }
+    },
+    {
+      "kind": "official_pdf",
+      "url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+      "resolved_url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+      "sha256": "6917a48ddb5ff5054818e8089d7a5b77e0d2e41f0869fe81e0c7a2ae6e1bee87",
+      "retrieved_utc": "2026-11-02T07:08:01.452591+00:00",
+      "prefix_only": false
+    }
+  ],
+  "truncated": false,
+  "pagination": {}
+}

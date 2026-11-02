@@ -1,0 +1,25 @@
+{
+  "local_regression": {
+    "passed": 59,
+    "seconds": 10.95
+  },
+  "fresh_wheel_mcp_regression": {
+    "passed": 59,
+    "seconds": 11.39
+  },
+  "lint": "passed",
+  "format": "passed (50 files)",
+  "skill_sync": "passed",
+  "dependency_check": "passed",
+  "cli_healthcheck": "passed; remote_checked=false",
+  "word_note": {
+    "file": "docs/SurveyBridge_AI_Concept_Note_2026-11-02.docx",
+    "pages": 11,
+    "sha256": "05a7085239ed09e9d7dc08a72f74d371d901186d04a3b84200363bec010d9c91",
+    "visual_review": "All eleven final rendered pages inspected",
+    "renderer": "Microsoft Word fixed-format export and Poppler; packaged renderer unavailable without LibreOffice"
+  },
+  "github_ci": "pending workflow authorization and execution",
+  "claude_host": "pending sign-in",
+  "independent_researcher_acceptance": "not completed"
+}

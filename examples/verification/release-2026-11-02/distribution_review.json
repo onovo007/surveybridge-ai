@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "excluded_local_working_bundle": true,
+  "required_source_assets_present": true,
+  "wheel_includes_reference_and_checkpoint_fix": true,
+  "artifacts": {
+    "surveybridge_ai-0.1.0.tar.gz": {
+      "bytes": 2469578,
+      "sha256": "32c2ae0515af29e6c178340b71c9ab8ca23f97f0c3aa53936af31a118549cb4e"
+    },
+    "surveybridge_ai-0.1.0-py3-none-any.whl": {
+      "bytes": 52882,
+      "sha256": "0342a8209590d29fe222a9fa2faedf0434d42485c281c9d379b4bc0665f81e12"
+    }
+  }
+}

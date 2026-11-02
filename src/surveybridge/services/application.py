@@ -22,6 +22,40 @@ class ResearchService:
     def close(self):
         self.client.close()
 
+    def list_publications(self, **kwargs):
+        from surveybridge.services.discovery import DiscoveryService
+
+        discovery = DiscoveryService(self)
+        try:
+            return discovery.list_publications(**kwargs)
+        finally:
+            discovery.web.close()
+
+    def get_report_metadata(self, report_url, verify_pdf=False):
+        from surveybridge.services.discovery import DiscoveryService
+
+        discovery = DiscoveryService(self)
+        try:
+            return discovery.get_report_metadata(report_url, verify_pdf)
+        finally:
+            discovery.web.close()
+
+    def run_regional_project(self, **kwargs):
+        from surveybridge.services.regional import RegionalService
+
+        return RegionalService(self).run(**kwargs)
+
+    def export_regional_project(self, run_id, output_dir):
+        from surveybridge.services.regional import RegionalService
+        from surveybridge.services.regional_export import export_regional
+
+        run = RegionalService(self).load(run_id)
+        path = export_regional(run, output_dir, self.settings)
+        return Result(
+            data={"run_id": run_id, "path": str(path), "completeness": run["completeness"]},
+            warnings=run["warnings"],
+        )
+
     @staticmethod
     def sources(pages):
         return [{k: v for k, v in page.items() if k != "body_hex"} for page in pages]
@@ -37,7 +71,37 @@ class ResearchService:
             }
         )
 
-    def list_countries(self, query=None, limit=100):
+    def list_countries(self, query=None, limit=100, region=None):
+        if region is not None:
+            from surveybridge.services.discovery import DiscoveryService
+
+            discovery = DiscoveryService(self)
+            try:
+                selected = discovery.selection(region=region)
+            finally:
+                discovery.web.close()
+            rows = [
+                r
+                for r in selected["classification"]["countries"]
+                if r["country_id"] in selected["country_ids"]
+            ]
+            if query:
+                rows = [
+                    r
+                    for r in rows
+                    if query.casefold() in (r["country_name"] + " " + r["country_id"]).casefold()
+                ]
+            self._limit(limit)
+            return Result(
+                data=rows[:limit],
+                source=selected["sources"],
+                truncated=len(rows) > limit,
+                pagination={
+                    "matched": len(rows),
+                    "returned": min(len(rows), limit),
+                    "classification": selected["classification"],
+                },
+            )
         self._limit(limit)
         records, pages = self.client.fetch("countries")
         rows = [country(r).model_dump() for r in records]
@@ -58,7 +122,23 @@ class ResearchService:
             raise ValueError("Unknown or unavailable DHS country ID")
         return ids, rows, pages
 
-    def list_surveys(self, country_ids, from_year=None, to_year=None):
+    def list_surveys(self, country_ids=None, from_year=None, to_year=None, region=None):
+        if region is not None:
+            from surveybridge.services.discovery import DiscoveryService
+
+            discovery = DiscoveryService(self)
+            try:
+                selected = discovery.selection(country_ids, region, from_year, to_year)
+            finally:
+                discovery.web.close()
+            return Result(
+                data=selected["surveys"],
+                source=selected["sources"],
+                pagination={
+                    "returned": len(selected["surveys"]),
+                    "selection_mode": selected["selection_mode"],
+                },
+            )
         years = year_filters(from_year, to_year)
         ids, _, cp = self._countries(country_ids)
         records, pages = self.client.fetch(
@@ -110,12 +190,21 @@ class ResearchService:
     def get_indicator_series(
         self,
         indicator_id,
-        country_ids,
+        country_ids=None,
         from_year=None,
         to_year=None,
         breakdown="national",
         project_id=None,
+        region=None,
     ):
+        if region is not None:
+            from surveybridge.services.discovery import DiscoveryService
+
+            discovery = DiscoveryService(self)
+            try:
+                country_ids = discovery.selection(country_ids, region)["country_ids"]
+            finally:
+                discovery.web.close()
         if not re.fullmatch(r"[A-Za-z0-9_]{1,80}", indicator_id):
             raise ValueError("Invalid indicator ID; select one from the official catalog")
         if breakdown not in {"national", "subnational", "background", "all"}:

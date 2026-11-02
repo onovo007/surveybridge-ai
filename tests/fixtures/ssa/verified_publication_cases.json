@@ -1,0 +1,268 @@
+{
+  "cases": [
+    {
+      "report_id": "PR167",
+      "title": "Congo Demographic and Health Survey 2025 - Key Indicators Report (French)",
+      "publication_date": "2026-08",
+      "publication_date_precision": "month",
+      "publication_date_raw": "08/2026",
+      "report_type": "Preliminary Reports/Key Indicators Reports",
+      "catalog_url": "https://dhsprogram.com/publications/publication-PR167-Preliminary-Reports-Key-Indicators-Reports.cfm",
+      "country_id": "CG",
+      "source_url": "https://dhsprogram.com/pubs/pdf/PR167/PR167.pdf",
+      "source_history": [
+        {
+          "kind": "official_publication_search",
+          "url": "https://dhsprogram.com/publications/Publication-Search.cfm?country1=60&shareurl=yes",
+          "sha256": "97c1e0b20967ebdcbbe30f6c37488bb41d6fb3a0402e80abd234bff728066edb",
+          "retrieved_utc": "2026-10-31T06:25:45.012920+00:00",
+          "record_hash": "0a4766d851a07109a2a4ccc35afbc7bfaf7975adfa993929310b47fd1a7f5e70",
+          "metadata": {
+            "report_id": "PR167",
+            "title": "Congo Demographic and Health Survey 2025 - Key Indicators Report (French)",
+            "publication_date": "2026-08",
+            "publication_date_precision": "month",
+            "publication_date_raw": "08/2026",
+            "report_type": "Preliminary Reports/Key Indicators Reports",
+            "catalog_url": "https://dhsprogram.com/publications/publication-PR167-Preliminary-Reports-Key-Indicators-Reports.cfm"
+          }
+        },
+        {
+          "kind": "official_publication_detail",
+          "url": "https://dhsprogram.com/publications/publication-PR167-Preliminary-Reports-Key-Indicators-Reports.cfm",
+          "sha256": "fdf0187afa3202f341f57e364054c51a74adf7d8558049fcbbe2810eb7366f58",
+          "retrieved_utc": "2026-10-31T06:25:45.536133+00:00",
+          "metadata": {
+            "Document Type": "Preliminary Reports/Key Indicators Reports",
+            "Country(s)": "Congo",
+            "Survey": "Congo DHS, 2025",
+            "Language": "French",
+            "Author(s)": "Institut National de la Statistique, Brazzaville, Congo, and ICF, Rockville, Maryland, USA",
+            "Publication Date": "August 2026",
+            "Publication ID": "PR167"
+          }
+        }
+      ],
+      "download_verified": false,
+      "verification_status": "OFFICIAL_CATALOG_METADATA",
+      "dataset_access": "unknown_not_queried",
+      "warnings": [
+        "Official report exists while API survey status is not Completed"
+      ],
+      "survey_id": "CG2025DHS",
+      "survey_year": 2025,
+      "survey_type": "DHS",
+      "fieldwork_start": "2025-08-01",
+      "fieldwork_end": "2025-12-01",
+      "match_status": "official_survey_number_join",
+      "api_availability_scope": "survey_catalog_any_indicator_not_requested_indicator",
+      "source_states": [
+        "REPORT_METADATA_ONLY"
+      ],
+      "api_indicator_catalog_flag": false,
+      "is_mini_dhs": false
+    },
+    {
+      "report_id": "FR401",
+      "publication_id": "2549",
+      "title": "Rwanda DHS, 2025 - Final Report (English)",
+      "report_type": "DHS Final Reports",
+      "country_id": "RW",
+      "survey_id": "RW2025DHS",
+      "survey_year": 2025,
+      "survey_type": "DHS",
+      "source_url": "https://www.dhsprogram.com/pubs/pdf/FR401/FR401.pdf",
+      "catalog_url": "https://dhsprogram.com/publications/publication-FR401-DHS-Final-Reports.cfm",
+      "publication_date": "2026-08",
+      "publication_date_precision": "month",
+      "fieldwork_start": "2025-07-01",
+      "fieldwork_end": "2025-11-01",
+      "match_status": "canonical_api_survey_id",
+      "download_verified": false,
+      "verification_status": "OFFICIAL_CATALOG_METADATA",
+      "dataset_access": "unknown_not_queried",
+      "source_history": [
+        {
+          "kind": "aggregate_publication_catalog",
+          "source_url": "https://api.dhsprogram.com/rest/dhs/publications?countryIds=CG%2CNG%2CRW&f=json&perpage=1000&page=1",
+          "retrieved_utc": "2026-10-31T06:25:43.157447+00:00",
+          "source_response_hash": "0867ea90acef710834c6c901df696f2374edc22f18bd66a773d5377aa8154dcf",
+          "source_record_hash": "2962f39d01ae44671437d62f82fc744c0940877c756a55c991921e04e8f03d55",
+          "raw": {
+            "PublicationId": 2549,
+            "PublicationTitle": "Final Report",
+            "PublicationDescription": "Final Report",
+            "DHS_CountryCode": "RW",
+            "SurveyId": "RW2025DHS",
+            "SurveyYear": "2025",
+            "SurveyType": "DHS",
+            "PublicationURL": "https://www.dhsprogram.com/pubs/pdf/FR401/FR401.pdf",
+            "ThumbnailURL": "https://www.dhsprogram.com/publications/images/thumbnails/FR401.jpg",
+            "PublicationSize": 13958269
+          }
+        },
+        {
+          "kind": "official_publication_search",
+          "url": "https://dhsprogram.com/publications/Publication-Search.cfm?country1=35&shareurl=yes",
+          "sha256": "c31be8c8e30c92a8fce54f75e477fde31998c61f475f8aac1f269d5ee29fb402",
+          "retrieved_utc": "2026-10-31T06:27:39.206101+00:00",
+          "record_hash": "edb967bed0e0a391ae186f9dd29bdf2ec6dd038562cca37b7cb314555a1c705f",
+          "metadata": {
+            "report_id": "FR401",
+            "title": "Rwanda DHS, 2025 - Final Report (English)",
+            "publication_date": "2026-08",
+            "publication_date_precision": "month",
+            "publication_date_raw": "08/2026",
+            "report_type": "DHS Final Reports",
+            "catalog_url": "https://dhsprogram.com/publications/publication-FR401-DHS-Final-Reports.cfm"
+          }
+        }
+      ],
+      "warnings": [],
+      "publication_date_raw": "08/2026",
+      "api_availability_scope": "survey_catalog_any_indicator_not_requested_indicator",
+      "source_states": [
+        "API_INDICATOR_AVAILABLE",
+        "REPORT_METADATA_ONLY"
+      ],
+      "api_indicator_catalog_flag": true,
+      "is_mini_dhs": false
+    },
+    {
+      "report_id": "PR166",
+      "title": "Nigeria Mini DHS 2025-26 - Key Indicators Report (English)",
+      "publication_date": "2026-07",
+      "publication_date_precision": "month",
+      "publication_date_raw": "07/2026",
+      "report_type": "Preliminary Reports/Key Indicators Reports",
+      "catalog_url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm",
+      "country_id": "NG",
+      "source_url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+      "source_history": [
+        {
+          "kind": "official_publication_search",
+          "url": "https://dhsprogram.com/publications/Publication-Search.cfm?country1=30&shareurl=yes",
+          "sha256": "2db1ad1b355faa025c98fd36261c2be2f3c24207f6212c6d004efdc960426213",
+          "retrieved_utc": "2026-10-31T06:26:02.633798+00:00",
+          "record_hash": "e50813cb8e1a4aed55856c8a32eb0a11ccf44b9c75a64f35bd811b36886aec95",
+          "metadata": {
+            "report_id": "PR166",
+            "title": "Nigeria Mini DHS 2025-26 - Key Indicators Report (English)",
+            "publication_date": "2026-07",
+            "publication_date_precision": "month",
+            "publication_date_raw": "07/2026",
+            "report_type": "Preliminary Reports/Key Indicators Reports",
+            "catalog_url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm"
+          }
+        },
+        {
+          "kind": "official_publication_detail",
+          "url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm",
+          "sha256": "f3badf50944317445cbb63c95bee35243993c2753830a0b6acdcca04258b7942",
+          "retrieved_utc": "2026-10-31T06:26:03.187461+00:00",
+          "metadata": {
+            "Document Type": "Preliminary Reports/Key Indicators Reports",
+            "Country(s)": "Nigeria",
+            "Survey": "Nigeria Interim DHS, 2025",
+            "Language": "English",
+            "Author(s)": "National Population Commission, Abuja, Nigeria, and ICF, Rockville, Maryland, USA",
+            "Publication Date": "July 2026",
+            "Publication ID": "PR166"
+          }
+        }
+      ],
+      "download_verified": false,
+      "verification_status": "OFFICIAL_CATALOG_METADATA",
+      "dataset_access": "unknown_not_queried",
+      "warnings": [
+        "Official report exists while API survey status is not Completed",
+        "Officially named abbreviated survey; verify design and coverage before comparison"
+      ],
+      "survey_id": "NG2025DHS",
+      "survey_year": 2025,
+      "survey_type": "DHS",
+      "fieldwork_start": "2025-12-01",
+      "fieldwork_end": "2026-02-01",
+      "match_status": "official_survey_number_join",
+      "api_availability_scope": "survey_catalog_any_indicator_not_requested_indicator",
+      "source_states": [
+        "REPORT_METADATA_ONLY"
+      ],
+      "api_indicator_catalog_flag": false,
+      "is_mini_dhs": true
+    }
+  ],
+  "PR166_verification": {
+    "report_id": "PR166",
+    "source_url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+    "catalog_url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm",
+    "source_history": [
+      {
+        "kind": "official_report_search",
+        "url": "https://dhsprogram.com/publications/Publication-Search.cfm?pubid1=PR166&shareurl=yes",
+        "sha256": "d7898b8cb42adc4f0819f52634fe64151d116b673cf9371265a7a9e38558e9fd",
+        "retrieved_utc": "2026-10-31T06:31:29.282934+00:00"
+      },
+      {
+        "kind": "official_publication_detail",
+        "url": "https://dhsprogram.com/publications/publication-PR166-Preliminary-Reports-Key-Indicators-Reports.cfm",
+        "sha256": "f3badf50944317445cbb63c95bee35243993c2753830a0b6acdcca04258b7942",
+        "retrieved_utc": "2026-10-31T06:26:03.187461+00:00",
+        "metadata": {
+          "Document Type": "Preliminary Reports/Key Indicators Reports",
+          "Country(s)": "Nigeria",
+          "Survey": "Nigeria Interim DHS, 2025",
+          "Language": "English",
+          "Author(s)": "National Population Commission, Abuja, Nigeria, and ICF, Rockville, Maryland, USA",
+          "Publication Date": "July 2026",
+          "Publication ID": "PR166"
+        }
+      },
+      {
+        "kind": "official_pdf",
+        "url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+        "resolved_url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+        "sha256": "6917a48ddb5ff5054818e8089d7a5b77e0d2e41f0869fe81e0c7a2ae6e1bee87",
+        "retrieved_utc": "2026-10-31T06:31:30.268822+00:00",
+        "prefix_only": false
+      }
+    ],
+    "warnings": [
+      "Official report exists while API survey status is not Completed",
+      "PDF cover date 2026-06 differs from catalog publication date 2026-07; both preserved"
+    ],
+    "country_id": "NG",
+    "title": "Nigeria Mini DHS 2025-26 - Key Indicators Report (English)",
+    "publication_date": "2026-07",
+    "publication_date_precision": "month",
+    "publication_date_raw": "07/2026",
+    "report_type": "Preliminary Reports/Key Indicators Reports",
+    "survey_id": "NG2025DHS",
+    "survey_year": 2025,
+    "survey_type": "DHS",
+    "fieldwork_start": "2025-12-01",
+    "fieldwork_end": "2026-02-01",
+    "match_status": "official_survey_number_join",
+    "pdf_verification": {
+      "page_count": 40,
+      "cover_date": "2026-06",
+      "cover_date_precision": "month",
+      "official_mini_design_label": true,
+      "fieldwork_sentence": {
+        "start": "2025-12-08",
+        "end": "2026-02-15",
+        "method": "literal_fieldwork_sentence_front_matter"
+      },
+      "verification_method": "pypdf_front_matter_structure",
+      "numeric_estimates_extracted": false,
+      "tables": "Complex tables require independent page/table/denominator validation; extraction disabled"
+    },
+    "download_verified": true,
+    "verification_status": "OFFICIAL_PDF_VERIFIED_NO_ESTIMATES_EXTRACTED",
+    "source_states": [
+      "OFFICIAL_REPORT_AVAILABLE_API_PENDING"
+    ],
+    "api_availability_scope": "survey_catalog_any_indicator_not_requested_indicator"
+  },
+  "note": "Factual metadata and public source hashes only; no redistributed PDF or report estimates"
+}

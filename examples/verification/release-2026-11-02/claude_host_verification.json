@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-02T07:26:16.069362+00:00",
+  "mode": "Native signed-in Claude Code read-only natural-language session",
+  "skill_loaded": "surveybridge:surveybridge",
+  "calls": [
+    {
+      "tool": "Skill",
+      "arguments": {
+        "skill": "surveybridge:surveybridge"
+      },
+      "status": "completed"
+    },
+    {
+      "tool": "mcp__surveybridge__surveybridge_healthcheck",
+      "arguments": {},
+      "status": "completed"
+    },
+    {
+      "tool": "mcp__surveybridge__surveybridge_list_countries",
+      "arguments": {
+        "region": "ssa",
+        "limit": 100
+      },
+      "status": "completed"
+    },
+    {
+      "tool": "mcp__surveybridge__surveybridge_get_report_metadata",
+      "arguments": {
+        "report_url": "https://dhsprogram.com/pubs/pdf/PR166/PR166.pdf",
+        "verify_pdf": true
+      },
+      "status": "completed"
+    }
+  ],
+  "ssa_countries": 42,
+  "report_id": "PR166",
+  "catalog_date": "2026-07",
+  "pdf_cover_date": "2026-06",
+  "fieldwork_start": "2025-12-08",
+  "fieldwork_end": "2026-02-15",
+  "numeric_estimates_extracted": false,
+  "review": "Source labels and date disagreements preserved; API availability scope stated; no unsupported seasonality inference in accepted rerun",
+  "initial_review_finding": "Initial response added unsupported seasonality and label interpretation; canonical skill strengthened and this successful rerun reviewed",
+  "settings": "Invocation-only MCP config and allowlist; no persistent host settings changed",
+  "scope_limit": "Metadata workflow verified; independent researcher acceptance and survey harmonization not certified"
+}
