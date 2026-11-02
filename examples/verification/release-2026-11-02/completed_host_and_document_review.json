@@ -1,0 +1,15 @@
+{
+  "document": "docs/SurveyBridge_AI_Concept_Note_CI_Verified_2026-11-02.docx",
+  "sha256": "aba8fb9f0e0694a4202f3e2c977f9322a62e00d514e0ae3ee662b3021e14350d",
+  "pages": 11,
+  "visual_review": "All eleven final rendered pages inspected",
+  "renderer": "Microsoft Word fixed-format export and Poppler",
+  "earlier_document_preserved": true,
+  "local_tests": {
+    "passed": 59,
+    "seconds": 11.23
+  },
+  "github_ci": "Both initial nine-job push and PR matrices passed; refreshed final-commit checks required",
+  "claude_host": "Passed signed-in native skill plus three-tool workflow after scientific narrative review",
+  "independent_researcher_acceptance": "Outstanding; no final production release claimed"
+}

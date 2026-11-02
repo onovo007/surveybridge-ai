@@ -1,0 +1,165 @@
+{
+  "scope": "Remote CI on workflow activation commit; both nine-job matrices passed",
+  "runs": [
+    {
+      "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555",
+      "event": "push",
+      "headSha": "3c682b2e74c5951aeb985aeba4f2d32a6726822f",
+      "createdAt": "2026-11-02T07:16:11Z",
+      "updatedAt": "2026-11-02T07:18:16Z",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "test (windows-latest, 3.11)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525231"
+        },
+        {
+          "name": "test (macos-latest, 3.13)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525335"
+        },
+        {
+          "name": "test (macos-latest, 3.11)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525336"
+        },
+        {
+          "name": "test (windows-latest, 3.13)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525344"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.12)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525355"
+        },
+        {
+          "name": "test (windows-latest, 3.12)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525428"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.11)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525500"
+        },
+        {
+          "name": "test (macos-latest, 3.12)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525619"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.13)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555/job/125145525708"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815",
+      "event": "pull_request",
+      "headSha": "3c682b2e74c5951aeb985aeba4f2d32a6726822f",
+      "createdAt": "2026-11-02T07:16:11Z",
+      "updatedAt": "2026-11-02T07:19:14Z",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "test (windows-latest, 3.11)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526487"
+        },
+        {
+          "name": "test (windows-latest, 3.12)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526751"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.11)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526755"
+        },
+        {
+          "name": "test (macos-latest, 3.13)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526773"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.12)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526780"
+        },
+        {
+          "name": "test (macos-latest, 3.11)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526789"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.13)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526862"
+        },
+        {
+          "name": "test (macos-latest, 3.12)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526871"
+        },
+        {
+          "name": "test (windows-latest, 3.13)",
+          "conclusion": "success",
+          "url": "https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815/job/125145526988"
+        }
+      ]
+    }
+  ],
+  "push_run_test_counts": [
+    {
+      "job": "test (windows-latest, 3.11)",
+      "passed": 59,
+      "seconds": 11.91
+    },
+    {
+      "job": "test (macos-latest, 3.13)",
+      "passed": 59,
+      "seconds": 4.91
+    },
+    {
+      "job": "test (macos-latest, 3.11)",
+      "passed": 59,
+      "seconds": 6.17
+    },
+    {
+      "job": "test (windows-latest, 3.13)",
+      "passed": 59,
+      "seconds": 7.13
+    },
+    {
+      "job": "test (ubuntu-latest, 3.12)",
+      "passed": 59,
+      "seconds": 3.56
+    },
+    {
+      "job": "test (windows-latest, 3.12)",
+      "passed": 59,
+      "seconds": 12.19
+    },
+    {
+      "job": "test (ubuntu-latest, 3.11)",
+      "passed": 59,
+      "seconds": 5.94
+    },
+    {
+      "job": "test (macos-latest, 3.12)",
+      "passed": 59,
+      "seconds": 5.69
+    },
+    {
+      "job": "test (ubuntu-latest, 3.13)",
+      "passed": 59,
+      "seconds": 6.0
+    }
+  ],
+  "log_sha256": "2bba866ca40d904b54eb5b0073d3c0c90ce361b2dfaba2795feb8b55c4a82f50"
+}

@@ -1,8 +1,17 @@
-# Activate GitHub Actions
+# Cross platform validation
 
-The complete nine-job validation workflow is supplied as `ci/validation.yml`. The publishing OAuth token has repository access but lacks GitHub's `workflow` scope. GitHub rejected a push containing `.github/workflows/ci.yml`; SSH authentication is unavailable. The public beta therefore ships the workflow as an inactive template. No remote CI success is claimed.
+The active workflow is `.github/workflows/ci.yml`; `ci/validation.yml` is its portable template. On 2 November 2026 the owner completed GitHub CLI authorization with `workflow` scope and published it in commit `3c682b2`.
 
-Authorize the required scope interactively on your own machine:
+Both initial nine-job validation runs passed across Windows, macOS and Linux with Python 3.11, 3.12 and 3.13:
+
+- [Push validation](https://github.com/onovo007/surveybridge-ai/actions/runs/41405197555)
+- [Pull request validation](https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815)
+
+Each job passed all 59 tests, dependency checks, Ruff, skill synchronization, the scientific integrity audit and distribution builds. Actions are pinned to verified commit hashes with read-only repository access. Full Git history enables verification of the archived source-code hashes. Evidence is in `examples/verification/release-2026-11-02/github_ci.json`. Future changes require their own passing checks; CI does not replace host testing or independent researcher acceptance.
+
+## Maintainer authorization and template deployment
+
+Maintainers whose credentials lack workflow permission can authorize it interactively:
 
 ```sh
 gh auth refresh -h github.com -s workflow
@@ -30,4 +39,4 @@ git commit -m "Activate cross-platform validation workflow"
 git push
 ```
 
-The template runs dependency checks, Ruff, skill synchronization, pytest and distribution builds on Windows/macOS/Linux with Python 3.11, 3.12 and 3.13. Review all nine jobs before changing the beta's portability claims. Scope changes are an account authorization action and were not performed automatically.
+The template runs dependency checks, Ruff, skill synchronization, pytest, source integrity review and distribution builds on Windows/macOS/Linux with Python 3.11, 3.12 and 3.13. Review all nine jobs for the current commit. The owner completed account authorization; no credential is embedded in the repository.

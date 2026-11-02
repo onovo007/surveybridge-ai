@@ -4,7 +4,7 @@
 
 The `feat/ssa-coverage` development branch adds UN M49 SSA coverage, publication-first discovery (including reports absent from the aggregate API), optional PDF metadata verification, and checkpointed regional exports. See the [SSA/publication guide](docs/SSA_PUBLICATIONS_GUIDE.md). The original beta tag and four-country outputs remain unchanged; this extension is not a final release.
 
-Read the [concept note](docs/SurveyBridge_AI_Concept_Note_2026-11-02.docx) for goals, architecture, use cases and the proposed adoption plan, and the [scientific release review](docs/SCIENTIFIC_RELEASE_REVIEW.md) for the verified scope and comparison restrictions.
+Read the [concept note with verified CI results](docs/SurveyBridge_AI_Concept_Note_CI_Verified_2026-11-02.docx) for goals, architecture, use cases and the proposed adoption plan, and the [scientific release review](docs/SCIENTIFIC_RELEASE_REVIEW.md) for the verified scope and comparison restrictions. The earlier concept note is preserved alongside this revision.
 
 Discover official country, survey and indicator metadata; retrieve public aggregated DHS estimates; flag comparison risks; export auditable CSV, JSON, Excel and executable notebooks. The released beta exposes seven MCP tools; the SSA/publication development extension exposes eleven through the official Python MCP SDK. No AI API key is required by this package.
 
@@ -87,7 +87,7 @@ python scripts/sync_skills.py --check
 python -m build
 ```
 
-Tests run without DHS connectivity. HTTP mocks test failures and paging; actual archived DHS responses support regression tests; an SDK client starts the real stdio server and exercises all seven tools offline. The supplied [CI template](ci/README.md) targets Windows/macOS/Linux and Python 3.11–3.13. GitHub rejected workflow publication because the OAuth token lacks workflow permission; activation and remote validation remain outstanding.
+Tests run without DHS connectivity. HTTP mocks test failures and paging; archived DHS responses support regression tests; an SDK client starts the real stdio server and exercises the original seven and four additional tools offline. The [active CI workflow](ci/README.md) passed all nine Windows/macOS/Linux and Python 3.11–3.13 combinations on 2 November 2026, with 59 tests per job, integrity audits and distribution builds. See the [successful PR run](https://github.com/onovo007/surveybridge-ai/actions/runs/41405197815). Native Codex and Claude natural-language metadata workflows are verified; independent researcher acceptance remains a separate final release requirement.
 
 See [API verification](docs/API_VERIFICATION.md), [engineering decisions](docs/DECISIONS.md), [data-access policy](DATA_ACCESS_POLICY.md), [acceptance tests](ACCEPTANCE_TESTS.md), [release notes](docs/RELEASE_NOTES.md), and [v0.2 roadmap](docs/ROADMAP.md).
 
