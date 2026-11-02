@@ -1,0 +1,26 @@
+{
+  "reviewed_utc": "2026-11-02T07:04:44.169353+00:00",
+  "scope": "Offline scientific data integrity and interpretation safeguards",
+  "ssa_output_hashes_verified": 16,
+  "source_code_hashes_verified": 25,
+  "archived_source_revision": "4db6edf",
+  "current_source_files_changed_since_run": [
+    "utils/cache.py"
+  ],
+  "original_beta_output_hashes_verified": 24,
+  "source_projects_reconstructed": 126,
+  "ssa_observations_verified": 837,
+  "original_beta_observations_verified": 78,
+  "csv_numeric_null_identity_checks": "passed",
+  "indicator_counts": {
+    "CH_VACC_C_DP3": 170,
+    "RH_ANCP_W_SKP": 593,
+    "HA_HIVP_B_HIV": 74
+  },
+  "true_zero_observations": 0,
+  "missing_estimates": 0,
+  "complete_source_confidence_intervals": 74,
+  "comparison_decision": "All three unrestricted SSA comparisons remain blocked",
+  "acceptance": "Suitable for public aggregate discovery, extraction and source review",
+  "not_certified": "Survey-specific equivalence, causal effects, pooled estimates or independent human peer review"
+}

@@ -1,3 +1,11 @@
+# Unreleased SSA and publication extension
+
+Publication-first discovery covers DHS-covered SSA countries using official metadata and versioned UN M49 classification. Adds four MCP tools, checkpointed regional extraction, report/API availability and publication lineage exports. Nigeria PR166, Congo PR167 and Rwanda FR401 have source-backed metadata fixtures. Numerical PDF-table extraction remains disabled.
+
+The recorded example contains 837 public API observations from 126 completed tasks across 42 eligible countries; counts describe a source snapshot. An internal scientific review validates archived lineage and preserves all three unrestricted SSA comparison blocks. Independent researcher acceptance remains outstanding.
+
+Release checks on 2 November 2026 add bounded Windows checkpoint-lock recovery, two failure/recovery tests, a repeatable integrity audit, a signed-in Claude host probe, packaging exclusion for the local working bundle and a comprehensive Word concept note. The deterministic suite passes 59 tests. Remote CI and the Claude natural-language session remain pending owner authentication at the latest check. This section is not a published release announcement.
+
 # v0.1.0 — GitHub beta, 31 October 2026
 
 Initial implementation by Quantium Insights LLC: official DHS aggregated REST connector; typed country, survey, indicator and observation metadata; bounded paging and retry; exact-response caching; persistent research snapshots; conservative comparability findings; Typer CLI; seven official Python SDK v2 MCP tools; Codex/Claude skills and plugin metadata; documented exports with raw records, checksums and offline notebooks; automated tests and a cross-platform CI definition.

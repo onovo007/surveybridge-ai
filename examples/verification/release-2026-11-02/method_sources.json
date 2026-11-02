@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://dhsprogram.com/data/Guide-to-DHS-Statistics/Vaccination.htm",
+    "retrieved_utc": "2026-11-02T06:56:36.127377+00:00",
+    "status": 200,
+    "sha256": "d768ce7838afe18a0a1169f2a944695f86af8180e75eecccc71ba5789b0178ac",
+    "bytes": 49055
+  },
+  {
+    "url": "https://dhsprogram.com/data/Guide-to-DHS-Statistics/Antenatal_Care.htm",
+    "retrieved_utc": "2026-11-02T06:56:36.289469+00:00",
+    "status": 200,
+    "sha256": "01ca28d94ceed7e5123097f2902dd01eb560931a440a9ebfe1bd41cfac0bd20e",
+    "bytes": 69652
+  },
+  {
+    "url": "https://dhsprogram.com/data/Guide-to-DHS-Statistics/HIV_Prevalence.htm",
+    "retrieved_utc": "2026-11-02T06:56:36.386267+00:00",
+    "status": 200,
+    "sha256": "8e3f8569962f75fec98e45a9e258b0208e5a1f5efb3e8d176373a3de1f42423a",
+    "bytes": 15212
+  }
+]

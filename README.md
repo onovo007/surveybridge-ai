@@ -4,6 +4,8 @@
 
 The `feat/ssa-coverage` development branch adds UN M49 SSA coverage, publication-first discovery (including reports absent from the aggregate API), optional PDF metadata verification, and checkpointed regional exports. See the [SSA/publication guide](docs/SSA_PUBLICATIONS_GUIDE.md). The original beta tag and four-country outputs remain unchanged; this extension is not a final release.
 
+Read the [concept note](docs/SurveyBridge_AI_Concept_Note_2026-11-02.docx) for goals, architecture, use cases and the proposed adoption plan, and the [scientific release review](docs/SCIENTIFIC_RELEASE_REVIEW.md) for the verified scope and comparison restrictions.
+
 Discover official country, survey and indicator metadata; retrieve public aggregated DHS estimates; flag comparison risks; export auditable CSV, JSON, Excel and executable notebooks. The released beta exposes seven MCP tools; the SSA/publication development extension exposes eleven through the official Python MCP SDK. No AI API key is required by this package.
 
 Status: **tested beta**, distributed through [GitHub](https://github.com/onovo007/surveybridge-ai). See [the build report](docs/BUILD_REPORT.md) for executed checks and remaining release gates. A 14-day sprint is a development target; external beta testing and cross-platform validation are not assumed complete.

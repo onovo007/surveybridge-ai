@@ -1,4 +1,24 @@
-# SSA/publication extension build report — 31 October 2026
+# SSA/publication extension build report
+
+## Release checks 2 November 2026
+
+The internal scientific integrity and methods review is complete for the scoped discovery/extraction workflow. All 837 regional observations and the original 78 observations reconstruct from archived sources. CSV values, nulls and identities agree with JSON; all 16 regional output hashes, 24 beta output hashes and 25 archived source-code hashes are verified. The archive's source-code hashes are checked against commit `4db6edf`, not rewritten to describe newer code. One current code file differs because of the checkpoint robustness fix below. The original bundles remain unchanged. See [scientific review](SCIENTIFIC_RELEASE_REVIEW.md) and the new evidence under `examples/verification/release-2026-11-02/`.
+
+Official vaccination, antenatal-care and HIV guidance was retrieved with HTTP 200. Review documented vaccination age/ascertainment differences, DHS-8 antenatal population and recall changes, and HIV algorithm changes. All three unrestricted regional comparison blocks remain. No PDF table estimates or harmonized outcomes are certified. This is an internal implementation review; independent researcher acceptance remains an original final release criterion.
+
+A fresh regression run exposed intermittent Windows PermissionError during atomic checkpoint replacement. Added six bounded replacement attempts, plus two deterministic tests verifying recovery and persistent-failure preservation of the prior file. The expanded suite now passes **59 tests in 10.95s**, retaining the original 37 and preceding 20 extension tests. Lint, format (50 files), skill synchronization and dependency consistency passed. Standard output safety and existing no-overwrite exports are preserved.
+
+The source archive now excludes the ignored first SSA working bundle while preserving the committed review bundle. CI action versions were verified against official repositories and pinned to commit hashes. The prepared nine-job workflow also runs the offline scientific integrity audit. A local `.github/workflows/ci.yml` is prepared but is not claimed active remotely until authorization, publication and successful execution are observed.
+
+An eleven-page Word concept note covers objectives, architecture, methods, evidence, use cases, target audiences, positioning, proposed launch messaging and adoption measurement. It was rendered with Microsoft Word after the packaged renderer reported missing LibreOffice, and every page was visually checked. It does not claim that outreach or usage measurements have occurred.
+
+Fresh post-fix wheel and source builds succeeded in a new output directory. Archive inspection confirmed the local working bundle is excluded and required reference data, skills, review documents and the committed regional example are present. A new isolated environment installed the wheel with report/chart extras, passed `pip check` and CLI healthcheck, and supplied MCP subprocesses for **59 passing tests in 11.39s**. Separate build hashes and final document hash are recorded in `distribution_review.json` and `release_checks.json`.
+
+A fresh live CLI request through that installed wheel verified PR166 again on 2 November 2026 using a separate cache. It returned `OFFICIAL_PDF_VERIFIED_NO_ESTIMATES_EXTRACTED`, catalog July 2026, cover June 2026, survey NG2025DHS and literal fieldwork 8 December 2025 to 15 February 2026. Its API-pending state explicitly uses the survey catalog's any-indicator scope, not a selected-indicator retrieval. The factual metadata, URLs, times and hashes are preserved in `pr166_live_metadata.json`; no full PDF was stored in the evidence directory.
+
+At the last account check, GitHub remained authorized without `workflow` scope and Claude Code remained logged out. An interactive GitHub scope-refresh window was opened for the owner, and a read-only Claude host probe is prepared. PR #1 remains draft. Engineering/host checks must pass before readiness; external scientific acceptance is separate from this internal review. No merge, final release or remote CI success is claimed.
+
+## Historical extension verification 31 October 2026
 
 Status: development extension prepared for draft PR review. No final release or merge is claimed. Original specifications, beta tag, original dependency snapshot and validated four-country outputs are preserved.
 
